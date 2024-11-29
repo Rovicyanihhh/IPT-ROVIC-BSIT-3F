@@ -1,0 +1,47 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeSlideDown 2s ease-out; /* Apply animation */
+}
+
+/* Animation Keyframes */
+@keyframes fadeSlideDown {
+    0% {
+        opacity: 0; /* Fully transparent */
+        transform: translateY(-30px); /* Positioned slightly above */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Natural position */
+    }
+}
+@media (min-width: 768px) {
+    header .profile img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 1024px) {
+    header .profile img {
+        width: 250px;
+        height: 250px;
+    }
+}
